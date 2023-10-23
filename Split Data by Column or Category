@@ -1,0 +1,12 @@
+import pandas as pd
+
+data = pd.read_csv('pln_joined_cleaned.csv')
+
+kategori = data['nama_prov'].unique()
+
+data_terpisah = {}
+for kat in kategori:
+    data_terpisah[kat] = data[data['nama_prov'] == kat]
+
+for kat, df in data_terpisah.items():
+    df.to_csv(f'{kat}_data.csv', index=False)
