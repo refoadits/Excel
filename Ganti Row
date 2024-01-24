@@ -1,0 +1,19 @@
+import pandas as pd
+import os
+
+# Tentukan path ke folder yang berisi file CSV
+folder_path ='C:/Users/HP/Here2023/PLN Data Fixed Geometry'
+
+# Loop melalui setiap file CSV dalam folder
+for filename in os.listdir(folder_path):
+    if filename.endswith('.csv'):
+        file_path = os.path.join(folder_path, filename)
+
+        # Baca file CSV
+        df = pd.read_csv(file_path)
+
+        # Ubah nama kolom
+        df.rename(columns={'WADMKC': 'Kecamatan', 'WADMKK': 'Kabupaten/Kota', 'WADMPR': 'Provinsi'}, inplace=True)
+
+        # Simpan kembali file CSV yang sudah diubah
+        df.to_csv(file_path, index=False)
