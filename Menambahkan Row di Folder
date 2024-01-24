@@ -1,0 +1,20 @@
+import os
+import pandas as pd
+
+# Tentukan folder tempat file CSV berada
+folder_path = '/path/to/your/csv/files'
+
+# Loop melalui setiap file dalam folder
+for filename in os.listdir(folder_path):
+    if filename.endswith('.csv'):
+        file_path = os.path.join(folder_path, filename)
+
+        # Baca file CSV ke dalam DataFrame
+        df = pd.read_csv(file_path)
+
+        # Tambahkan baris baru pada kolom yang diinginkan
+        new_row = {'Column_H': 'Value_H', 'Column_I': 'Value_I', 'Column_J': 'Value_J', 'Column_K': 'Value_K', 'Column_L': 'Value_L'}
+        df = df.append(new_row, ignore_index=True)
+
+        # Tulis kembali DataFrame ke file CSV
+        df.to_csv(file_path, index=False)
