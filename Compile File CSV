@@ -1,0 +1,33 @@
+import os
+import pandas as pd
+
+# File excel disiapkan dalam satu folder yang sama dengan file python
+def merge_csv_files(input_folder, output_file):
+    # Membuat list untuk menyimpan DataFrame dari setiap file
+    dfs = []
+
+    # Mendapatkan daftar file di dalam folder input_folder
+    files = [f for f in os.listdir(input_folder) if f.endswith('.csv')]
+
+    # Menggabungkan setiap file CSV ke dalam list dfs
+    for file in files:
+        file_path = os.path.join(input_folder, file)
+
+        # Menggunakan encoding latin-1 untuk mengatasi UnicodeDecodeError
+        df = pd.read_csv(file_path, encoding='latin-1')
+        dfs.append(df)
+
+    # Menggabungkan semua DataFrame menjadi satu DataFrame
+    merged_df = pd.concat(dfs, ignore_index=True)
+
+    # Menyimpan DataFrame hasil penggabungan ke dalam file CSV
+    merged_df.to_csv(output_file, index=False)
+    print(f"File {output_file} berhasil dibuat.")
+
+# Pakai folder yang berisikan file CSV yang ingin dicompile
+input_folder = 'Merge PA'
+
+# Ganti 'output_file.csv' dengan nama file CSV hasil penggabungan
+output_file = 'Sumatera Utara.csv'
+
+merge_csv_files(input_folder, output_file)
