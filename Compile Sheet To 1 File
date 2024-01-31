@@ -1,0 +1,15 @@
+import pandas as pd
+
+# Membaca setiap lembar kerja menjadi DataFrame
+df_sheet1 = pd.read_excel('UTI_1 FULL DATASET.xlsx', sheet_name='JKT Bandengan 082021 ')
+df_sheet2 = pd.read_excel('UTI_1 FULL DATASET.xlsx', sheet_name='JKT Bulungan 082021')
+df_sheet3 = pd.read_excel('UTI_1 FULL DATASET.xlsx', sheet_name='JKT CP 082021')
+df_sheet4 = pd.read_excel('UTI_1 FULL DATASET.xlsx', sheet_name='JKT JTNGR 082021')
+# Tambahkan lembar kerja lain jika diperlukan
+
+# Menggabungkan DataFrame menjadi satu
+df_combined = pd.concat([df_sheet1, df_sheet2, df_sheet3, df_sheet4], ignore_index=True)
+# Jika struktur kolom berbeda, Anda mungkin perlu menyesuaikan penggabungan
+
+# Menyimpan hasil gabungan ke dalam file Excel baru
+df_combined.to_excel('hasil_konsolidasi.xlsx', index=False)
