@@ -1,0 +1,25 @@
+import os
+import pandas as pd
+
+# Tentukan direktori tempat Anda menyimpan file CSV
+folder_path = '2022'
+
+# Inisialisasi list untuk menyimpan semua data
+all_data = []
+
+# Loop melalui setiap file dalam folder
+for file_name in os.listdir(folder_path):
+    if file_name.endswith('.csv'):
+        # Gabungkan direktori file dengan nama file
+        file_path = os.path.join(folder_path, file_name)
+        # Baca file CSV dan tambahkan ke list
+        data = pd.read_csv(file_path)
+        all_data.append(data)
+
+# Gabungkan semua data menjadi satu dataframe
+merged_data = pd.concat(all_data, ignore_index=True)
+
+# Simpan dataframe ke file CSV
+merged_data.to_csv('PA_2022.csv', index=False)
+
+print("Data CSV telah digabungkan dan disimpan dalam file 'merged_data.csv'")
