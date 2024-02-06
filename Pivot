@@ -1,0 +1,9 @@
+import pandas as pd
+
+df = pd.read_csv('C:/Users/LENOVO/PycharmProjects/pythonProject/PLN+HERE/Jatim_Here.csv', dtype={'column_name': str})
+
+# Lakukan pivot menggunakan kolom 'WADMKK' dan 'WADMKC', dengan nilai dari kolom 'Address'
+pivot_table = pd.pivot_table(df, values='address', index=['WADMKK', 'WADMKC'], aggfunc='count')
+
+# Simpan hasil pivot ke dalam file Excel
+pivot_table.to_excel('jatim_Pivot.xlsx')
