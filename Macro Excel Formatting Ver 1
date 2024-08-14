@@ -1,0 +1,745 @@
+Sub Macro1()
+'
+' Macro1 Macro
+'
+' Keyboard Shortcut: Ctrl+h
+'
+    ActiveWindow.ScrollRow = 898414
+    ActiveWindow.ScrollRow = 832790
+    ActiveWindow.ScrollRow = 684357
+    ActiveWindow.ScrollRow = 540611
+    ActiveWindow.ScrollRow = 467175
+    ActiveWindow.ScrollRow = 304680
+    ActiveWindow.ScrollRow = 192183
+    ActiveWindow.ScrollRow = 48437
+    ActiveWindow.ScrollRow = 1
+    Range("C1").Select
+    Application.CutCopyMode = False
+    Range("C1").Select
+    Application.CutCopyMode = False
+    ActiveCell.FormulaR1C1 = _
+        "=IF(ISNUMBER(FIND(""Jl."", RC[-1])), MID(RC[-1], FIND(""Jl."", RC[-1]), LEN(RC[-1]) - FIND(""Jl."", RC[-1]) + 1), RC[-1])"
+    Range("C1").Select
+    Selection.AutoFill Destination:=Range("C1:C900000")
+    Range("C1:C900000").Select
+    Selection.Copy
+    Range("B1").Select
+    Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+        :=False, Transpose:=False
+    Columns("C:C").Select
+    Application.CutCopyMode = False
+    Selection.ClearContents
+    Columns("B:B").ColumnWidth = 49.78
+    Columns("B:B").Select
+    Selection.Replace What:=" No.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Sheets("POI_Batch 2_Diluar Jabodetabek_").Select
+    ActiveWindow.ScrollRow = 899978
+    ActiveWindow.ScrollRow = 606235
+    ActiveWindow.ScrollRow = 334367
+    ActiveWindow.ScrollRow = 1
+    Sheets("Sheet1").Select
+    Selection.Replace What:=" No0", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" No1", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" No2", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" No3", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" No4", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" No5", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" No6", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" No7", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" No8", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" No9", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt/Rw", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt0", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt1", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt2", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt3", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt4", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt5", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt6", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt7", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt8", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rt9", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw0", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw1", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw2", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw3", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw4", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw5", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw6", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw7", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw8", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Rw9", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rw.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rt.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=12
+    Selection.Replace What:="Seberang", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Depan", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Dpn", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Belakang", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Blkg", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Kel.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Kel ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Kec.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Kec ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=24
+    ActiveWindow.ScrollRow = 1
+    ActiveWindow.ScrollRow = 3125
+    ActiveWindow.ScrollRow = 28125
+    Selection.Replace What:=" Blok ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Blok.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Blk ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Blk.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Block.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Block", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Lt.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Lt ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Lt0", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Lt1", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Lt2", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Lt3", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Lt4", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=45
+    Selection.Replace What:=" Lrg ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=42
+    ActiveWindow.ScrollRow = 28125
+    ActiveWindow.ScrollRow = 29687
+    ActiveWindow.ScrollRow = 84373
+    ActiveWindow.ScrollRow = 184371
+    ActiveWindow.ScrollRow = 190620
+    ActiveWindow.ScrollRow = 193745
+    ActiveWindow.ScrollRow = 215620
+    ActiveWindow.ScrollRow = 224994
+    ActiveWindow.ScrollRow = 226557
+    ActiveWindow.ScrollRow = 246869
+    ActiveWindow.ScrollRow = 260931
+    ActiveWindow.ScrollRow = 268743
+    ActiveWindow.ScrollRow = 285930
+    ActiveWindow.ScrollRow = 287493
+    ActiveWindow.ScrollRow = 356241
+    ActiveWindow.ScrollRow = 374990
+    ActiveWindow.ScrollRow = 395302
+    ActiveWindow.ScrollRow = 404677
+    Selection.Replace What:="@", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="!", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="#", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="$", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="%", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="(", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=")", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=15
+    ActiveWindow.ScrollRow = 404677
+    ActiveWindow.ScrollRow = 409364
+    ActiveWindow.ScrollRow = 431239
+    ActiveWindow.ScrollRow = 434364
+    ActiveWindow.ScrollRow = 437489
+    ActiveWindow.ScrollRow = 465613
+    ActiveWindow.ScrollRow = 476550
+    ActiveWindow.ScrollRow = 478113
+    ActiveWindow.ScrollRow = 493737
+    ActiveWindow.ScrollRow = 495300
+    ActiveWindow.ScrollRow = 517174
+    ActiveWindow.ScrollRow = 526549
+    ActiveWindow.ScrollRow = 528111
+    ActiveWindow.ScrollRow = 535923
+    ActiveWindow.ScrollRow = 545298
+    ActiveWindow.ScrollRow = 546861
+    ActiveWindow.ScrollRow = 565610
+    ActiveWindow.ScrollRow = 589047
+    ActiveWindow.ScrollRow = 601547
+    ActiveWindow.ScrollRow = 604672
+    ActiveWindow.ScrollRow = 603109
+    ActiveWindow.ScrollRow = 598422
+    ActiveWindow.ScrollRow = 601547
+    ActiveWindow.ScrollRow = 632796
+    ActiveWindow.ScrollRow = 642171
+    ActiveWindow.ScrollRow = 643733
+    ActiveWindow.ScrollRow = 682794
+    ActiveWindow.ScrollRow = 696857
+    ActiveWindow.ScrollRow = 692169
+    ActiveWindow.ScrollRow = 695294
+    ActiveWindow.ScrollRow = 720293
+    ActiveWindow.ScrollRow = 721856
+    ActiveWindow.ScrollRow = 759355
+    ActiveWindow.ScrollRow = 762480
+    Selection.Replace What:=" Kabupaten ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.ScrollRow = 765605
+    ActiveWindow.ScrollRow = 778104
+    ActiveWindow.ScrollRow = 779667
+    ActiveWindow.ScrollRow = 796854
+    ActiveWindow.ScrollRow = 798416
+    ActiveWindow.ScrollRow = 810916
+    ActiveWindow.ScrollRow = 812478
+    ActiveWindow.ScrollRow = 814041
+    ActiveWindow.ScrollRow = 820291
+    ActiveWindow.ScrollRow = 821853
+    ActiveWindow.ScrollRow = 823416
+    ActiveWindow.ScrollRow = 824978
+    ActiveWindow.ScrollRow = 846852
+    ActiveWindow.ScrollRow = 848415
+    ActiveWindow.ScrollRow = 854665
+    ActiveWindow.ScrollRow = 856227
+    ActiveWindow.ScrollRow = 867164
+    ActiveWindow.ScrollRow = 871852
+    ActiveWindow.ScrollRow = 873414
+    Selection.Replace What:=" Bl.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.ScrollRow = 874977
+    ActiveWindow.ScrollRow = 876539
+    ActiveWindow.ScrollRow = 878102
+    ActiveWindow.ScrollRow = 882789
+    ActiveWindow.ScrollRow = 884351
+    ActiveWindow.ScrollRow = 893726
+    ActiveWindow.ScrollRow = 896851
+    ActiveWindow.ScrollRow = 898414
+    ActiveWindow.ScrollRow = 899976
+    ActiveWindow.ScrollRow = 898414
+    ActiveWindow.ScrollRow = 893726
+    ActiveWindow.ScrollRow = 892164
+    ActiveWindow.ScrollRow = 695294
+    ActiveWindow.ScrollRow = 565610
+    ActiveWindow.ScrollRow = 449988
+    ActiveWindow.ScrollRow = 360928
+    ActiveWindow.ScrollRow = 296867
+    ActiveWindow.ScrollRow = 171871
+    ActiveWindow.ScrollRow = 103123
+    ActiveWindow.ScrollRow = 39062
+    ActiveWindow.ScrollRow = 1
+    Selection.Replace What:=" Rt:", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="No:", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Nomor:", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="kec.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.ScrollRow = 1563
+    ActiveWindow.ScrollRow = 18750
+    Selection.Replace What:="kel.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=9
+    Selection.Replace What:="Dekat", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=57
+    Selection.Replace What:="Disamping", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Whatssapp", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Whatsapp", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Whatsap", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Notelp", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Telp", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Wa:", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=105
+    Selection.Replace What:="Depan ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=87
+    ActiveWindow.ScrollRow = 18750
+    ActiveWindow.ScrollRow = 20312
+    ActiveWindow.ScrollRow = 21875
+    ActiveWindow.ScrollRow = 23437
+    ActiveWindow.ScrollRow = 37500
+    ActiveWindow.SmallScroll Down:=33
+    Selection.Replace What:=" Kelurahan ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Kecamatan ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=63
+    Selection.Replace What:="Samping ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=15
+    Selection.Replace What:="Di Dalam", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Didalam", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=60
+    Selection.Replace What:="Belakang", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=153
+    ActiveWindow.ScrollRow = 37500
+    ActiveWindow.ScrollRow = 40624
+    ActiveWindow.ScrollRow = 62499
+    ActiveWindow.ScrollRow = 67186
+    ActiveWindow.ScrollRow = 70311
+    ActiveWindow.ScrollRow = 73436
+    ActiveWindow.ScrollRow = 96873
+    ActiveWindow.ScrollRow = 103123
+    ActiveWindow.ScrollRow = 126560
+    ActiveWindow.ScrollRow = 128122
+    ActiveWindow.ScrollRow = 129684
+    ActiveWindow.ScrollRow = 137497
+    ActiveWindow.ScrollRow = 139059
+    ActiveWindow.ScrollRow = 159371
+    ActiveWindow.ScrollRow = 160934
+    ActiveWindow.ScrollRow = 329679
+    ActiveWindow.ScrollRow = 374990
+    ActiveWindow.ScrollRow = 390615
+    ActiveWindow.ScrollRow = 426551
+    ActiveWindow.ScrollRow = 428114
+    ActiveWindow.ScrollRow = 456238
+    Selection.Replace What:="Km.", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km0", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km1", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km2", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km3", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km4", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km5", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km6", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km7", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km8", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km9", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=15
+    Selection.Replace What:="Rt 0", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rt 1", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rt 2", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rt 3", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rt 4", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rt 5", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rt 6", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rt 7", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rt 8", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Rt 9", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=9
+    Selection.Replace What:=" Km ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Km 0", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Km 1", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=27
+    Selection.Replace What:="Km 1", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km 0", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km 2", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km 3", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km 4", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km 5", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km 6", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km 7", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km 8", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Km 9", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Bl ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Unnamed Road", Replacement:="\", LookAt:=xlPart _
+        , SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Unnamed Rd", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=66
+    Selection.Replace What:="B/", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=27
+    Selection.Replace What:=" A/", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" C/", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" F/", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=15
+    Selection.Replace What:=" I/", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=15
+    Selection.Replace What:=" Pd.,", Replacement:=" Pd.", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Klp.,", Replacement:=" Klp.", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=12
+    Selection.Replace What:=" KH.,", Replacement:=" KH.", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Jl.,", Replacement:=" Jl. ", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Jl.,", Replacement:="Jl. ", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Jl, ", Replacement:="Jl. ", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Jl,", Replacement:="Jl. ", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=132
+    ActiveWindow.ScrollRow = 456238
+    ActiveWindow.ScrollRow = 457801
+    ActiveWindow.ScrollRow = 462488
+    ActiveWindow.ScrollRow = 464050
+    ActiveWindow.ScrollRow = 484362
+    ActiveWindow.ScrollRow = 487487
+    ActiveWindow.ScrollRow = 595297
+    ActiveWindow.ScrollRow = 596859
+    ActiveWindow.ScrollRow = 695294
+    ActiveWindow.ScrollRow = 696857
+    ActiveWindow.ScrollRow = 779667
+    ActiveWindow.ScrollRow = 782792
+    ActiveWindow.ScrollRow = 789042
+    ActiveWindow.ScrollRow = 790604
+    ActiveWindow.ScrollRow = 806229
+    ActiveWindow.ScrollRow = 809353
+    ActiveWindow.ScrollRow = 899976
+    Selection.Replace What:="Patokan", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Belok ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Meter ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=":", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=-24
+    Selection.Replace What:=" A/", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=-54
+    Selection.TextToColumns Destination:=Range("B1"), DataType:=xlDelimited, _
+        TextQualifier:=xlDoubleQuote, ConsecutiveDelimiter:=False, Tab:=False, _
+        Semicolon:=False, Comma:=True, Space:=False, Other:=True, OtherChar:= _
+        "\", FieldInfo:=Array(Array(1, 1), Array(2, 1), Array(3, 1), Array(4, 1), Array(5, 1), _
+        Array(6, 1), Array(7, 1)), TrailingMinusNumbers:=True
+    Columns("C:C").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Selection.ClearContents
+    Range("B1").Select
+    ActiveWindow.SmallScroll Down:=9
+    ActiveWindow.ScrollRow = 1
+    ActiveWindow.ScrollRow = 4696
+    ActiveWindow.ScrollRow = 125215
+    Columns("B:B").Select
+    Range("B125215").Activate
+    ActiveWindow.SmallScroll Down:=48
+    ActiveWindow.ScrollRow = 125215
+    ActiveWindow.ScrollRow = 128345
+    ActiveWindow.ScrollRow = 170605
+    ActiveWindow.ScrollRow = 175300
+    ActiveWindow.ScrollRow = 339643
+    ActiveWindow.ScrollRow = 383468
+    ActiveWindow.ScrollRow = 385034
+    ActiveWindow.ScrollRow = 751284
+    ActiveWindow.ScrollRow = 870238
+    ActiveWindow.ScrollRow = 871803
+    ActiveWindow.ScrollRow = 899976
+    ActiveWindow.ScrollRow = 896846
+    ActiveWindow.ScrollRow = 677721
+    ActiveWindow.ScrollRow = 352165
+    ActiveWindow.ScrollRow = 118954
+    ActiveWindow.ScrollRow = 25043
+    ActiveWindow.ScrollRow = 1
+    Columns("B:B").Select
+    Selection.Replace What:=" Semarang Kota", Replacement:="\", LookAt:= _
+        xlPart, SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.ScrollRow = 1566
+    ActiveWindow.ScrollRow = 98607
+    ActiveWindow.ScrollRow = 100172
+    ActiveWindow.ScrollRow = 147127
+    ActiveWindow.ScrollRow = 148692
+    ActiveWindow.ScrollRow = 230081
+    Selection.Replace What:="/", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.ScrollRow = 231646
+    ActiveWindow.ScrollRow = 319296
+    Selection.Replace What:=" Warung ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Wr ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Alfamart", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Indomaret", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Toko ", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Sebelah", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="sebelah", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.ScrollRow = 320861
+    ActiveWindow.ScrollRow = 358426
+    Selection.Replace What:="setelah", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:="Setelah", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    Selection.Replace What:=" Stlh", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.SmallScroll Down:=6
+    ActiveWindow.ScrollRow = 358426
+    ActiveWindow.ScrollRow = 359991
+    ActiveWindow.ScrollRow = 370947
+    ActiveWindow.ScrollRow = 369382
+    ActiveWindow.ScrollRow = 367817
+    ActiveWindow.ScrollRow = 370947
+    ActiveWindow.ScrollRow = 414772
+    Selection.Replace What:="-", Replacement:="\", LookAt:=xlPart, _
+        SearchOrder:=xlByRows, MatchCase:=False, SearchFormat:=False, _
+        ReplaceFormat:=False, FormulaVersion:=xlReplaceFormula2
+    ActiveWindow.ScrollRow = 416337
+    ActiveWindow.ScrollRow = 493031
+    ActiveWindow.ScrollRow = 499291
+    ActiveWindow.ScrollRow = 701199
+    ActiveWindow.ScrollRow = 704329
+    ActiveWindow.ScrollRow = 705894
+    ActiveWindow.ScrollRow = 727807
+    ActiveWindow.ScrollRow = 715285
+    ActiveWindow.ScrollRow = 359991
+    ActiveWindow.ScrollRow = 236342
+    ActiveWindow.ScrollRow = 43825
+    ActiveWindow.ScrollRow = 1
+    Selection.TextToColumns Destination:=Range("B1"), DataType:=xlDelimited, _
+        TextQualifier:=xlDoubleQuote, ConsecutiveDelimiter:=False, Tab:=False, _
+        Semicolon:=False, Comma:=True, Space:=False, Other:=True, OtherChar:= _
+        "\", FieldInfo:=Array(1, 1), TrailingMinusNumbers:=True
+    Columns("C:C").Select
+    Range(Selection, Selection.End(xlToRight)).Select
+    Selection.ClearContents
+    Columns("B:B").Select
+    ActiveWorkbook.Save
+    Application.Run _
+        "'POI_Batch 2_Diluar Jabodetabek_Split_1.csv'!RemoveWordsContainingNumbers"
+End Sub
